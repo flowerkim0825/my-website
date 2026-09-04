@@ -35,6 +35,16 @@
     img {
         width: 600px;
     }
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 32%;
+    height: 250px;
+    object-fit: cover;
+}
  ol {
     font-size: 18px;
     line-height: 2;
@@ -77,7 +87,7 @@
     <li>조적공사</li>
     <li>마감공사</li>
 </ol>
-    <h2>주요 건설 장비</h2>
+ <h2>주요 건설 장비</h2>
 
 <ul>
     <li>굴착기</li>
@@ -85,17 +95,14 @@
     <li>덤프트럭</li>
     <li>콘크리트 펌프카</li>
 </ul>
-  
-    <h2>시공 사진</h2>
 
-<div class="photo-box">
+<h2>시공 사진</h2>
 
+<div class="gallery">
     <img src="https://picsum.photos/600/400" alt="시공 현장 사진 1">
-
     <img src="https://picsum.photos/600/401" alt="시공 현장 사진 2">
-
     <img src="https://picsum.photos/600/402" alt="시공 현장 사진 3">
-
 </div>
+
 </body>
 </html>
