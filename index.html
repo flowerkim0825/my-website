@@ -150,8 +150,11 @@ function showImage(imageSrc) {
     img.style.maxWidth = "90%";
     img.style.maxHeight = "90%";
 
-    popup.appendChild(img);
-    document.body.appendChild(popup);
+   popup.appendChild(img);
+popup.onclick = function() {
+    popup.remove();
+};
+document.body.appendChild(popup);
 }
 </script>
 </body>
