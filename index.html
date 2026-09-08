@@ -149,6 +149,8 @@ function showImage(imageSrc) {
     img.src = imageSrc;
     img.style.maxWidth = "90%";
     img.style.maxHeight = "90%";
+    img.style.borderRadius = "10px";
+    img.style.boxShadow = "0 4px 20px rgba(0,0,0,0.5)";
 
    popup.appendChild(img);
 popup.onclick = function() {
