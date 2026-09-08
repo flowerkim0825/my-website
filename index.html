@@ -169,7 +169,12 @@ function showImage(imageSrc) {
     img.style.borderRadius = "10px";
     img.style.boxShadow = "0 4px 20px rgba(0,0,0,0.5)";
 
-   popup.appendChild(img);
+popup.appendChild(img);
+
+img.onclick = function(event) {
+    event.stopPropagation();
+};
+
 popup.onclick = function() {
     popup.remove();
 };
