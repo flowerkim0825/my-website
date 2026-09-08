@@ -151,6 +151,14 @@ function showImage(imageSrc) {
     popup.style.display = "flex";
     popup.style.justifyContent = "center";
     popup.style.alignItems = "center";
+    const closeBtn = document.createElement("div");
+    closeBtn.textContent = "×";
+    closeBtn.style.position = "absolute";
+    closeBtn.style.top = "20px";
+    closeBtn.style.right = "20px";
+    closeBtn.style.color = "white";
+    closeBtn.style.fontSize = "40px";
+    popup.appendChild(closeBtn);
     const img = document.createElement("img");
     img.src = imageSrc;
     img.style.maxWidth = "90%";
